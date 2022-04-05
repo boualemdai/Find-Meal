@@ -25,10 +25,11 @@ body {
   align-items: center;
   justify-content: center;
   padding: 5rem;
+  min-height: 100vh;
 }
 .app-container {
   width: 70rem;
-  
+  height: 89rem;
   background-color: rgb(249, 245, 243);
   border-radius: 1rem;
   display: grid;
@@ -117,6 +118,9 @@ form > input:focus + button {
 aside {
   grid-area: s;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main {
   grid-area: m;
@@ -158,6 +162,7 @@ footer {
 }
 .side li:hover {
   background-color: rgba(250, 128, 114, 0.459);
+  transform: translateY(-2%);
   box-shadow: 0 1px 2px gray;
 }
 
@@ -177,7 +182,7 @@ footer {
   white-space: nowrap; 
   width: 100%; 
   overflow: hidden;
-  text-overflow: "…";
+  text-overflow:ellipsis;
   
   align-self: flex-end;
   grid-area: t;
@@ -187,4 +192,74 @@ footer {
 .text-area {
   align-self: flex-start;
   grid-area: tx;
+}
+.error,.change-page{
+  height: 5rem;
+  width: 100%;
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+.change-page{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(250, 128, 114, 0.178);
+ 
+  
+}
+.change-page > .btn{
+width: 7rem;
+height: 3rem;
+border: none;
+border-radius: 2rem;
+background-color: rgb(185, 184, 184);
+color: white;
+font-size: 1.2rem;
+cursor: pointer;
+
+
+}
+
+.next,.back{
+  background-image: radial-gradient(
+  circle farthest-corner at 10% 20%,
+  rgba(255, 209, 67, 1) 0%,
+  rgba(255, 145, 83, 1) 90%
+);
+}
+main{
+  display: grid;
+  grid-template-areas: 
+  "recipe-image recipe-image"
+  "recip-top recip-top"
+   "recipe-ing1 recipe-ing2"
+   "foo foo";
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 30rem 10rem 1fr 10rem;
+}
+.recipe-image{
+  grid-area:recipe-image ;
+  height: 30rem;
+  width: 100%;
+  
+}
+.recip-top{
+  grid-area:recip-top ;
+  height: 10rem;
+}
+.recipe-ing1{
+  grid-area:recipe-ing1 ;
+  
+  
+}
+.recipe-ing2{
+  grid-area:recipe-ing2 ;
+  
+  
+}
+.foo{
+  grid-area: foo;
+  height: 10rem;
 }
