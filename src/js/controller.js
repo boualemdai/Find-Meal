@@ -16,6 +16,7 @@ import localStorgeView from "./views/localStorgeView";
   recipeView.addHandlerLocalStorage(controlLocalStorage);
   localStorgeView.addhandlerBookmarks(controlDisplayFromLocalStorage);
   localStorgeView.addHandlerstartbookMarkes(controlStartBookmarks);
+  console.log("hello");
 })();
 
 async function controlRecipe() {
