@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- <script src="https://kit.fontawesome.com/3e1976fec5.js" crossorigin="anonymous"></script> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Meal</title>
 
-<head>
-  <!-- <script src="https://kit.fontawesome.com/3e1976fec5.js" crossorigin="anonymous"></script> -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perfect Meal</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <script defer src="src/js/controller.js" type="module"></script>
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <body>
+    <div class="app-container">
+      <header>
+        <ul class="nav">
+          <li class="logo">
+            <img src="src/img/logo.png" alt="img" />
+          </li>
+          <li>
+            <form>
+              <input
+                type="text"
+                placeholder="Over 1.000.000 recipes"
+                id="search-input"
+              />
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i> SEARCH
+              </button>
+            </form>
+          </li>
 
-  </script>
-  <script defer src="./main.js"></script>
-</head>
-
-<body>
-  <div class="app-container">
-    <header>
-      <ul class="nav">
-        <li class="logo">
-          <img src="./logo.png" alt="img" />
-        </li>
-        <li>
-          <form>
-            <input type="text" id="search-input" />
-            <button> <i class="fa-solid fa-magnifying-glass"></i> SEARCH</button>
-          </form>
-        </li>
-
-        <li class="add-recipe"><i class="fa-solid fa-plus"></i> ADD RECIPE</li>
-        <li><i class="fa-regular fa-bookmark"></i> BOOKMARKES </li>
-      </ul>
-    </header>
-    <aside>
-      <div class="wait-circle"></div>
-      <ul class="side">
-      </ul>
-      <div class="change-page">
-        <button class="back btn">Back</button>
-        <button class="next btn">Next</button>
-      </div>
-    </aside>
-    <main>
-      
-    </main>
-    <footer>
-
-    </footer>
-  </div>
-</body>
-
+          <li class="add-recipe">
+            <i class="fa-solid fa-plus"></i> ADD RECIPE
+          </li>
+          <li class="bookmarks">
+            <i class="fa-regular fa-bookmark"></i> BOOKMARKES
+            <div class="local-storage-list"></div>
+          </li>
+        </ul>
+      </header>
+      <aside>
+        <ul class="side"></ul>
+        <div class="change-page">
+          <button class="btn back">
+            
+          </button>
+          <p></p>
+          <button class="btn next">
+             
+          </button>
+        </div>
+      </aside>
+      <main></main>
+      <footer>
+        <p>©️ Copyright DAIRI Boualem</p>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,28 @@
+{
+  "name": "forkfay",
+  "version": "1.0.0",
+  "description": "recipe search",
+  "default":"index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boualemdai/Find-Meal.git"
+  },
+  "author": "boualem dairi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boualemdai/Find-Meal/issues"
+  },
+  "homepage": "https://github.com/boualemdai/Find-Meal#readme",
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  },
+  "dependencies": {
+    "core-js": "^3.21.1",
+    "fraction.js": "^4.2.0",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
